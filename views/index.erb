@@ -10,7 +10,7 @@
     </form>
     <br>
     <% @history.reverse.each do |ins| %>
-      <a href="/messages/<%= ins.id %>"><%= ins.msg[0,20] %></a> - <%= ins.time %><br>
+      <a href="/messages/<%= ins.id %>"><%= ins.title %></a> - <%= ins.time %><br>
     <%end%>
 </body>
 </center>
